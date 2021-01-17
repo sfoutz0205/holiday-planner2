@@ -1,0 +1,227 @@
+* { 
+  margin:0; 
+  padding:0; 
+}
+
+main {
+  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* margin: auto; */
+}
+
+body {
+  line-height: .5;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+     color: #DEB887;
+     text-decoration:none; 
+     cursor: pointer;  
+}
+
+ul {
+  list-style: none;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* HEADER STYLES */
+#header-title {
+  font-family: 'Italianno', serif;
+  font-size: 90px;
+  text-decoration: none;
+  color: #DEB887;
+  text-align: center;
+  margin: 0;
+}
+
+.nav{
+  border:1px solid #ccc;
+  border-width:1px 0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+.nav li{
+  display:inline;
+}
+
+.nav a{
+  display:inline-block;
+  padding:10px 40px;
+}
+
+/* CALENDAR STYLES */
+
+tbody td, tbody th{
+    border: 1px solid gray;
+    margin: 0;
+    height: 120px;
+    width: 60px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.calendar-container {
+  margin: 10px;
+}
+.calendar-container p {
+  height: 90%;
+}
+
+.bg-info {
+  background-color: #FAEBD7;
+}
+
+#monthAndYear {
+  text-align: left;
+  font-size: 38px;
+  margin: 10px;
+}
+
+.calendar-btn {
+  font-size: 12px;
+  padding: 8px;
+}
+
+/* PAGE CONTENT STYLES*/
+.section-header {
+  color: #DEB887;
+  font-size: 32px;
+  margin: 20px;
+  font-family: 'Quattrocento';
+  text-align: center;
+}
+
+.form {
+  width: 25%;
+  padding: 12px 20px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+#login-form, #signup-form {
+  margin: 20px auto;
+  border: 1px dashed #DEB887;
+  width: 30%;
+}
+
+#signup-text {
+  text-align: center;
+}
+
+.form button, .btn {
+  background-color: #DEB887;
+  padding: 15px;
+  border-radius: 1px;
+  color: white; 
+  margin-top: 10px;
+}
+
+#result-header {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: #DEB887;
+}
+
+.recipe-card {
+  margin: 40px auto;
+  width: 50vw;
+  border: 1px solid #DEB887;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.recipe-ingredients {
+  list-style: none;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+
+.recipe-card a {
+  display: flex;
+  flex-direction: column;
+  color: #DEB887;
+  margin: 8px;
+  text-decoration: underline;
+}
+
+.recipe-title {
+  font-family: 'Italianno', serif;
+  font-size: 40px;
+}
+
+.recipe-image {
+  margin-bottom: 20px;
+}
+
+.url {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.delete-btn {
+  font-size: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#gifts-container {
+  text-align: center;
+}
+
+#gift-name {
+  font-family: 'Italianno', serif;
+  font-size: 36px;
+}
+
+#gift-description {
+  font-family: 'Italianno', serif;
+  font-size: 30px;
+}
+
+footer {
+  color: #DEB887;
+  text-align: center;
+  margin: 50px auto;
+  bottom: 0;
+  width: 100%;
+}
+
+.page-content {
+  text-align: center;
+}
+
+.calendar-btn {
+  font-size: 12px;
+  height: 8%;
+  margin: 5px;
+  padding: 10px;
+}
+
+#calendar-header {
+  display: flex;
+  align-items: center;
+}
+
+#calendar-jump {
+  margin: 10px;
+}
+
+

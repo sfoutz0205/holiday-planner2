@@ -1,0 +1,46 @@
+<h2 class="section-header">Add Gift</h2>
+
+<form class="form" id="gift-form">
+  <div>
+    <label for="gift-name">Giftee</label>
+    <input type="text" id="gift-name" name="gift-name"/>
+  </div>
+  <div>
+    <label for="gift-description">Gift</label>
+    <input type="text" id="gift-description" name="gift-description" />
+  </div>
+   <div>
+    <label for="gift-url">URL</label>
+    <input type="text" id="gift-url" name="gift-url" />
+  </div>
+    <button type="submit" class="form-btn btn" id="gift-btn">Add</button>
+  </form>
+  
+ {{#if gifts.length}}
+ <h2 class="section-header">Gift-List</h2>
+<section id="gifts-container">
+  <ul id="gift-list">
+    {{#each gifts as |gift|}}
+    <li>
+      <div class="gift-info" id="{{id}}"> 
+        <div>
+          <input type="checkbox" class="checkbox" id="gift-status">
+          <span id="gift-name"> {{name}} </span>
+          <span>&nbsp; . . . . . . . . . . . . . . . . . &nbsp;</span>
+          <span id="gift-description"> {{gift_description}}</span>
+        </div>
+        <div>
+          <a href="{{gift_url}}" id="gift_url" class="url" target="_blank">{{format_url gift_url}}</a>
+        </div>
+        <div>
+          <button class="delete-gift-btn btn delete-btn" id="{{id}}">Delete</button>
+        </div>
+    </li>
+    {{/each}}
+  </ul>
+</section>
+{{/if}}
+
+
+  <script src="/javascript/add-gift.js"></script>
+  <script src="/javascript/delete-gift.js"></script>
